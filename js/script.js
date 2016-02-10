@@ -1,7 +1,7 @@
 var wScroll = $(this).scrollTop();
 
 function showImage(wScroll){
-	if(wScroll > $(".tours-pics").offset().top){
+	if(wScroll > $(".tours-pics").offset().top - $(window).height() / 1.3){
 		$(".tours-pics figure").each(function(i,elem){
 			setTimeout(function(){
 				$(".tours-pics figure").eq(i).addClass("is-show");
