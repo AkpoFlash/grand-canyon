@@ -1,19 +1,18 @@
 @font-face{
-	font-family: Blackfat;
-	src: url(Blackfat.ttf);
+	font-family: Diapason;
+	src: url(Diapason-Regular.otf);
 }
 
 body{
 	margin: 0;
-	height: 3000px;
+	font-family: Diapason;
 }
 
-.container{
+header{
 	position: relative;
 	display: block;
 	overflow: hidden;
 	.background{
-		background: pink;
 		width: 100%;
 		height: 500px;
 		background-image: url(../img/grand-canyon-yellowstone-landscape.jpg);
@@ -23,14 +22,16 @@ body{
 		position: relative;
 	}
 	.logo{
-		font-family: Blackfat;
-		text-shadow: 2px 2px #000, 2px 0px #000, 0px 2px #000, 0px -2px #000, -2px 0px #000, -2px -2px #000;
+		text-shadow: 1px 1px #000, 1px 0px #000, 0px 1px #000, 0px -1px #000, -1px 0px #000, -1px -1px #000;
 		color: white;
-		font-size: 6em;
 		width: 100%;
+		font-size: 45px;
 		text-align: center;
 		position: absolute;
-		top: 30%;
+		top: 20%;
+		h1{
+			margin: 0;
+		}
 	}
 	.bird{
 		background-image: url(../img/tree_PNG3488.png);
@@ -40,5 +41,41 @@ body{
 		position: absolute;
 		bottom: -100px;
 		left: -50px;	
+	}
+}
+
+article{
+	text-align: center;
+	font-size: 24px;
+	margin: 40px;
+	h2{
+		margin: 40px;
+	}
+	p{
+		padding: 0 20%;
+	}
+	hr{
+		width: 60%;
+	}
+}
+
+.tours-pics{
+	.row{
+		margin: 0;
+		figure{
+			display: inline-block;
+			margin: 15px 20px;
+			opacity: 0;
+			transform: translateX(20px);
+			transition: all 0.3s ease-in-out;
+			img{
+				width: 180px;
+				height: 180px;
+			}
+			&.is-show{
+				opacity: 1;
+				transform: translateX(0px);
+			}
+		}
 	}
 }
