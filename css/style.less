@@ -5,13 +5,21 @@
 
 body{
 	margin: 0;
-	height: 4000px;
 	font-family: Diapason;
 }
 
-header{
-	position: relative;
+main{
+	overflow: hidden;
 	display: block;
+	position: relative;
+	z-index: 2;
+	background: #fff;
+	margin-bottom: 250px;
+}
+
+header{
+	display: block;
+	background: #fff;
 	overflow: hidden;
 	.background{
 		width: 100%;
@@ -48,10 +56,7 @@ header{
 article{
 	text-align: center;
 	font-size: 24px;
-	margin: 40px;
-	h2{
-		margin: 40px;
-	}
+	margin: 0 0 50px;
 	p{
 		padding: 0 20%;
 	}
@@ -164,7 +169,7 @@ article{
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	margin: 0;
+	margin: 0 auto 100px;
 	.blog{
 		width: 25%;
 		position: relative;
@@ -186,5 +191,45 @@ article{
 				color: #fff;
 			}
 		}
+	}
+}
+
+footer{
+	width: 100%;
+	background: #000;
+	position: fixed;
+	bottom: 0;
+	z-index: -1;
+	color: #fff;
+	padding: 40px 0;
+	line-height: 30px;
+	display: flex;
+	justify-content: center;
+	h3{
+		font-size: 24px;
+	}
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	a{
+		color: #fff;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.social{
+		width: 25%;	
+		text-align: left;
+	}
+	.link{
+		width: 25%;	
+		text-align: center;	
+	}
+	.contacts{
+		width: 25%;	
+		text-align: right;
 	}
 }
