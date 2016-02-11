@@ -34,13 +34,13 @@ header{
 			margin: 0;
 		}
 	}
-	.bird{
+	.tree{
 		background-image: url(../img/tree_PNG3488.png);
 		background-size: cover;
 		width: 200px;
 		height: 320px;
 		position: absolute;
-		bottom: -100px;
+		bottom: -150px;
 		left: -50px;	
 	}
 }
@@ -64,6 +64,7 @@ article{
 	.row{
 		margin: 0;
 		figure{
+			overflow: hidden;
 			display: inline-block;
 			margin: 15px 20px;
 			opacity: 0;
@@ -72,10 +73,31 @@ article{
 			img{
 				width: 180px;
 				height: 180px;
+				transition: all 0.3s ease-in-out;
+			}
+			figcaption{
+				position: absolute;
+				top: 10px;
+				opacity: 0;
+				color: #fff;
+				font-size: 18px;
+				padding: 5px 10px;
+				background: #000;
+				transition: all 0.3s ease-in-out;
+				left: -180px;
 			}
 			&.is-show{
 				opacity: 1;
 				transform: translateX(0px);
+			}
+			&:hover{
+				img{
+					transform: scale(1.2);
+				}
+				figcaption{
+					opacity: 1;
+					left: 0;
+				}
 			}
 		}
 	}
@@ -83,10 +105,10 @@ article{
 
 .periscope{
 	margin: 0 auto;
-	width: 400px;
-	height: 400px;
+	width: 450px;
+	height: 450px;
 	border-radius: 50%;
 	background-size: cover;
 	background-attachment: fixed;
-	background-image: url(../img/grand-canyon-yellowstone-landscape.jpg);
+	background-image: url(../img/Grand_canyon_of_Yellowstone_and_Yellowstone_fall.jpg);
 }

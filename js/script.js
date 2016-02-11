@@ -15,8 +15,8 @@ $(document).on("scroll",function(){
 	$(".logo").css({
 		"transform":"translate(0,"+wScroll/2+"%)"
 	});
-	$(".bird").css({
-		"transform":"translate(0,-"+wScroll/30+"%)"
+	$(".tree").css({
+		"transform":"translate(0,-"+wScroll/40+"%)"
 	});
 	showImage(wScroll);
 });
